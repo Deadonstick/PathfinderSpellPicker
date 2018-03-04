@@ -4,6 +4,7 @@
 #include <fstream>
 #include <algorithm>
 #include <ctime>
+#include <random>
 
 using namespace std;
 
@@ -36,8 +37,8 @@ vector<string> readSpells()
 vector<string> chooseSpells(vector<string>& allSpells, uint16_t amount)
 {
     vector<string> chosenSpells;
-    std::mt19937 g((unsigned) time(NULL));
-    std::shuffle(allSpells.begin(), allSpells.end(), g);
+    mt19937 g((unsigned) time(NULL));
+    shuffle(allSpells.begin(), allSpells.end(), g);
     for(uint16_t i = 0; i < amount ; ++i)
     {
         chosenSpells.push_back(allSpells.at(i));
