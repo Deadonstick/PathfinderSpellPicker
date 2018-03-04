@@ -1,0 +1,6 @@
+Pathfinder Spell Picker V1.0
+
+Use the d20pfsrd advanced spell search feature to generate a list of spells.
+Copy the advanced output of this result into a spells.txt file.
+Run the program from the same folder as your spells.txt file, optionally add a command line parameter to indicate how many spells you wish to generate.
+Follow instructions on screen.
